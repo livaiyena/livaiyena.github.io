@@ -1,0 +1,315 @@
+/* ===== Reset & Base ===== */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	line-height: 1.7;
+	color: #c9d1d9;
+	background-color: #0d1117;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/* ===== Header ===== */
+header {
+	background: linear-gradient(135deg, #161b22 0%, #0d1117 100%);
+	color: #e6edf3;
+	text-align: center;
+	padding: 2.5rem 1rem 1.5rem;
+	border-bottom: 1px solid #21262d;
+}
+
+header h1 {
+	font-size: 2.2rem;
+	letter-spacing: 1px;
+	background: linear-gradient(135deg, #58a6ff, #bc8cff);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+}
+
+header p {
+	font-size: 1rem;
+	margin-top: 0.4rem;
+	color: #8b949e;
+}
+
+/* ===== Navigation ===== */
+nav {
+	background-color: #161b22;
+	text-align: center;
+	padding: 0;
+	border-bottom: 1px solid #21262d;
+}
+
+nav ul {
+	list-style: none;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav ul li a {
+	display: inline-block;
+	color: #8b949e;
+	padding: 0.85rem 1.4rem;
+	font-size: 0.95rem;
+	transition: background-color 0.3s, color 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+	background-color: #21262d;
+	color: #58a6ff;
+}
+
+/* ===== Main Content ===== */
+main {
+	max-width: 900px;
+	margin: 2rem auto;
+	padding: 2rem;
+	background: #161b22;
+	border-radius: 8px;
+	border: 1px solid #21262d;
+}
+
+main h2 {
+	font-size: 1.5rem;
+	color: #58a6ff;
+	margin-bottom: 0.8rem;
+	border-bottom: 1px solid #21262d;
+	padding-bottom: 0.3rem;
+}
+
+main h3 {
+	font-size: 1.2rem;
+	color: #bc8cff;
+	margin: 1.2rem 0 0.5rem;
+}
+
+main p {
+	margin-bottom: 1rem;
+	text-align: justify;
+	color: #c9d1d9;
+}
+
+/* ===== Quick Links ===== */
+.quick-links {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+	margin-top: 1.5rem;
+}
+
+.quick-links a {
+	display: inline-block;
+	background: #21262d;
+	color: #58a6ff;
+	padding: 0.6rem 1.4rem;
+	border-radius: 6px;
+	font-size: 0.9rem;
+	border: 1px solid #30363d;
+	transition: transform 0.2s, border-color 0.3s, background-color 0.3s;
+}
+
+.quick-links a:hover {
+	transform: translateY(-2px);
+	border-color: #58a6ff;
+	background: #1c2333;
+}
+
+/* ===== Lists ===== */
+ul,
+ol {
+	margin-left: 1.5rem;
+	margin-bottom: 1rem;
+}
+
+li {
+	margin-bottom: 0.4rem;
+	color: #c9d1d9;
+}
+
+dl {
+	margin-bottom: 1rem;
+}
+
+dt {
+	font-weight: bold;
+	color: #58a6ff;
+	margin-top: 0.8rem;
+}
+
+dd {
+	margin-left: 1.2rem;
+	color: #8b949e;
+}
+
+/* ===== Blockquote ===== */
+blockquote {
+	border-left: 3px solid #58a6ff;
+	background-color: #0d1117;
+	padding: 1rem 1.5rem;
+	margin: 1.2rem 0;
+	font-style: italic;
+	color: #8b949e;
+	border-radius: 0 6px 6px 0;
+}
+
+/* ===== Timeline ===== */
+.timeline {
+	position: relative;
+	padding-left: 2rem;
+	margin: 1.5rem 0;
+}
+
+.timeline::before {
+	content: '';
+	position: absolute;
+	left: 0.5rem;
+	top: 0;
+	bottom: 0;
+	width: 2px;
+	background: linear-gradient(to bottom, #58a6ff, #bc8cff);
+	border-radius: 2px;
+}
+
+.timeline-item {
+	position: relative;
+	margin-bottom: 1.5rem;
+	padding-left: 1rem;
+}
+
+.timeline-item::before {
+	content: '';
+	position: absolute;
+	left: -1.55rem;
+	top: 0.45rem;
+	width: 10px;
+	height: 10px;
+	background: #58a6ff;
+	border-radius: 50%;
+	border: 2px solid #161b22;
+	box-shadow: 0 0 0 2px #58a6ff;
+}
+
+.timeline-item h4 {
+	color: #bc8cff;
+	font-size: 1rem;
+	margin-bottom: 0.2rem;
+}
+
+.timeline-item p {
+	font-size: 0.9rem;
+	color: #8b949e;
+	margin: 0;
+}
+
+/* ===== Contact List ===== */
+.contact-list {
+	list-style: none;
+	margin-left: 0;
+}
+
+.contact-list li {
+	padding: 0.8rem 0;
+	border-bottom: 1px solid #21262d;
+	font-size: 1rem;
+	color: #c9d1d9;
+}
+
+.contact-list li:last-child {
+	border-bottom: none;
+}
+
+.contact-list a {
+	color: #58a6ff;
+	font-weight: 600;
+	transition: color 0.3s;
+}
+
+.contact-list a:hover {
+	color: #bc8cff;
+}
+
+/* ========================================================
+   LAB 2 - Two Column Layout
+   ======================================================== */
+
+/* GRUP SEÇİCİ: h1, h2, p */
+h1,
+h2,
+p {
+	margin-bottom: 0.8rem;
+}
+
+.lab-container {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 1.5rem 0;
+}
+
+.lab-content {
+	display: inline-block;
+	vertical-align: top;
+	width: 64%;
+	background: #0d1117;
+	padding: 1.5rem;
+	border-radius: 8px;
+	border: 1px solid #21262d;
+	margin-right: 2%;
+}
+
+.lab-sidebar {
+	display: inline-block;
+	vertical-align: top;
+	width: 32%;
+	background: #0d1117;
+	padding: 1.5rem;
+	border-radius: 8px;
+	border: 1px solid #21262d;
+}
+
+/* HİYERARŞİK SEÇİCİ 1: .lab-content p */
+.lab-content p {
+	font-size: 0.95rem;
+	color: #c9d1d9;
+	line-height: 1.8;
+	text-align: justify;
+}
+
+/* HİYERARŞİK SEÇİCİ 2: .lab-sidebar p */
+.lab-sidebar p {
+	font-size: 0.9rem;
+	color: #8b949e;
+	line-height: 1.7;
+	text-align: left;
+}
+
+.lab-content h3,
+.lab-sidebar h3 {
+	font-size: 1.1rem;
+	color: #e6edf3;
+	border-bottom: 1px solid #21262d;
+	padding-bottom: 0.3rem;
+	margin-bottom: 0.8rem;
+}
+
+/* ===== Footer ===== */
+footer {
+	text-align: center;
+	padding: 1.5rem;
+	background-color: #161b22;
+	color: #484f58;
+	font-size: 0.85rem;
+	margin-top: 2rem;
+	border-top: 1px solid #21262d;
+}

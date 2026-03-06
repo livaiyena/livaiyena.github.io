@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Kerem Apaydın - Lab 2: HTML/CSS Uygulama">
+	<title>Lab 2 | Kerem Apaydın</title>
+	<link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+
+	<header>
+		<h1>Kerem Apaydın</h1>
+		<p>Bilgisayar Mühendisliği Öğrencisi &mdash; Sistem Mühendisi &bull; Gömülü Yazılım Geliştirme</p>
+	</header>
+
+	<!-- Yatay Menü: ul > li > a yapısı, display: inline-block -->
+	<nav>
+		<ul>
+			<li><a href="index.html">Ana Sayfa</a></li>
+			<li><a href="about.html">Hakkımda</a></li>
+			<li><a href="interests.html">İlgi Alanlarım</a></li>
+			<li><a href="contact.html">İletişim</a></li>
+			<li><a href="lab2.html" class="active">Lab 2</a></li>
+		</ul>
+	</nav>
+
+	<main>
+		<h2>Lab 2 &mdash; HTML/CSS Uygulama</h2>
+		<p>Bu sayfa, HTML5 ve CSS3 kullanılarak temel CSS özelliklerinin uygulandığı
+			bir laboratuvar çalışmasıdır. Yatay menü, iki sütunlu layout, hover efektleri
+			ve farklı CSS seçici türleri bu sayfada kullanılmıştır.</p>
+
+		<!-- İki Sütunlu İçerik Alanı -->
+		<div class="lab-container">
+
+			<!-- Sol Sütun: İçerik -->
+			<div class="lab-content">
+				<h3>İçerik Alanı</h3>
+				<p>Bu bölüm sayfanın ana içerik alanıdır. Burada web programlama ile ilgili
+					çeşitli bilgiler ve açıklamalar yer almaktadır. CSS ile metin biçimlendirme,
+					renk ayarları ve sayfa düzeni konularında uygulamalı örnekler sunulmaktadır.</p>
+				<p>HTML5 semantik etiketleri kullanarak sayfalarımızı daha anlamlı ve
+					erişilebilir hale getirebiliriz. CSS3 ile görsel tasarımı zenginleştirebilir,
+					kullanıcı deneyimini iyileştirebiliriz. Modern web geliştirme sürecinde bu
+					iki teknoloji birlikte çalışarak güçlü sonuçlar üretir.</p>
+			</div>
+
+			<!-- Sağ Sütun: Yan Menü / Bilgi -->
+			<div class="lab-sidebar">
+				<h3>Yan Menü / Bilgi</h3>
+				<p>Bu alan, ek bilgiler ve bağlantılar için ayrılmıştır. Burada konuyla
+					ilgili faydalı kaynaklar, ipuçları ve kısa bilgi notları paylaşılmaktadır.</p>
+				<p>CSS seçiciler sayesinde HTML elemanlarını hedefleyerek stil verebilir,
+					hiyerarşik ve grup seçicilerle kodunuzu daha düzenli hale getirebilirsiniz.
+					Bu sayfa tam olarak bu prensipleri uygulamaktadır.</p>
+			</div>
+
+		</div>
+	</main>
+
+	<footer>
+		<p>&copy; 2026 Kerem Apaydın &mdash; Web Programlama Dersi</p>
+	</footer>
+
+</body>
+
+</html>
