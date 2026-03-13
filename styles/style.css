@@ -240,6 +240,13 @@ blockquote {
 	color: #bc8cff;
 }
 
+/* ===== Typography Spacing ===== */
+h1,
+h2,
+p {
+	margin-bottom: 0.8rem;
+}
+
 /* ========================================================
    LAB 3 - Contact Form (Box Model)
    ======================================================== */
