@@ -65,6 +65,31 @@
 				<p>Sistem mühendisliği alanında profesyonel kariyer ve açık kaynak projelere katkı.</p>
 			</div>
 		</div>
+
+		<!-- İletişim Formu -->
+		<h2>İletişim Formu</h2>
+		<div class="contact-container">
+			<form action="#" method="post">
+				<label for="ad-soyad">Ad Soyad</label>
+				<input type="text" id="ad-soyad" name="ad-soyad" placeholder="Adınız ve soyadınız" required>
+
+				<label for="eposta">E-posta</label>
+				<input type="email" id="eposta" name="eposta" placeholder="ornek@mail.com" required>
+
+				<label for="konu">Konu</label>
+				<select id="konu" name="konu" required>
+					<option value="" disabled selected>Bir konu seçiniz</option>
+					<option value="is-teklifi">İş Teklifi</option>
+					<option value="soru">Soru</option>
+					<option value="geri-bildirim">Geri Bildirim</option>
+				</select>
+
+				<label for="mesaj">Mesaj</label>
+				<textarea id="mesaj" name="mesaj" rows="6" placeholder="Mesajınızı yazınız..." required></textarea>
+
+				<button type="submit">Gönder</button>
+			</form>
+		</div>
 	</main>
 
 	<footer>
