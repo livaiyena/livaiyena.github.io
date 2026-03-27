@@ -395,3 +395,155 @@ footer {
 	margin-top: 2rem;
 	border-top: 1px solid #21262d;
 }
+
+/* ========================================================
+   LAB 4 - Flexbox Assignment
+   ======================================================== */
+
+.flex-wrapper {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	background-color: #0d1117;
+	color: #c9d1d9;
+}
+
+/* 1) Navbar (10vh) */
+.flex-navbar {
+	height: 10vh;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 2rem;
+	background-color: #161b22;
+	border-bottom: 1px solid #21262d;
+}
+
+.flex-navbar .logo {
+	font-size: 1.5rem;
+	font-weight: bold;
+	color: #58a6ff;
+}
+
+.flex-navbar ul {
+	display: flex;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.flex-navbar ul li a {
+	padding: 0.5rem 1rem;
+	color: #8b949e;
+	transition: color 0.3s;
+}
+
+.flex-navbar ul li a:hover,
+.flex-navbar ul li a.active {
+	color: #58a6ff;
+}
+
+/* 2) Hero (30vh) */
+.flex-hero {
+	height: 30vh;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: stretch;
+	padding: 2rem;
+	background-color: #0d1117;
+	border-bottom: 1px solid #21262d;
+}
+
+.hero-content {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-right: 2rem;
+}
+
+.hero-content h2 {
+	color: #e6edf3;
+	margin-bottom: 1rem;
+}
+
+.hero-btn {
+	margin-top: 1rem;
+	align-self: flex-start;
+	background: #58a6ff;
+	color: #0d1117;
+	border: none;
+	padding: 0.6rem 1.2rem;
+	border-radius: 6px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.hero-image {
+	flex: 1;
+	background-color: #21262d;
+	border: 1px dashed #58a6ff;
+	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #8b949e;
+}
+
+/* 3) Kartlar (30vh) */
+.flex-cards {
+	height: 30vh;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	padding: 2rem;
+	background-color: #161b22;
+	border-bottom: 1px solid #21262d;
+	overflow-y: auto;
+}
+
+.card {
+	flex: 1 1 calc(33.333% - 1rem); 
+	background-color: #0d1117;
+	border: 1px solid #30363d;
+	border-radius: 6px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+	color: #bc8cff;
+}
+
+/* 4) Flex Grow (20vh) */
+.flex-grow-area {
+	height: 20vh;
+	display: flex;
+	align-items: stretch;
+	padding: 2rem;
+	gap: 1rem;
+	background-color: #0d1117;
+}
+
+.grow-box {
+	background-color: #21262d;
+	border-radius: 6px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-weight: bold;
+}
+
+.grow-1 { flex-grow: 1; background-color: #238636; color: #fff; }
+.grow-2 { flex-grow: 2; background-color: #1f6feb; color: #fff; }
+.grow-3 { flex-grow: 1; background-color: #8957e5; color: #fff; }
+
+/* 5) Footer (10vh) */
+.flex-footer {
+	height: 10vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #161b22;
+	border-top: 1px solid #21262d;
+}

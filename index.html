@@ -10,50 +10,52 @@
 </head>
 
 <body>
+	<div class="flex-wrapper">
+		<!-- 1) Navbar (10vh) -->
+		<nav class="flex-navbar">
+			<div class="logo">Kerem Apaydın</div>
+			<ul>
+				<li><a href="index.html" class="active">Ana Sayfa</a></li>
+				<li><a href="about.html">Hakkımda</a></li>
+				<li><a href="interests.html">İlgi Alanlarım</a></li>
+				<li><a href="contact.html">İletişim</a></li>
+			</ul>
+		</nav>
 
-	<header>
-		<h1>Kerem Apaydın</h1>
-		<p>Bilgisayar Mühendisliği Öğrencisi &mdash; Sistem Mühendisi &bull; Gömülü Yazılım Geliştirme</p>
-	</header>
+		<!-- 2) Hero (30vh) -->
+		<section class="flex-hero">
+			<div class="hero-content">
+				<h2>Hoş geldiniz!</h2>
+				<p>Linux ortamları ve otomasyon üzerine odaklanan bilgisayar mühendisliği öğrencisi.</p>
+				<button class="hero-btn">Projelerimi Gör</button>
+			</div>
+			<div class="hero-image">
+				Görsel Kutusu
+			</div>
+		</section>
 
-	<nav>
-		<ul>
-			<li><a href="index.html" class="active">Ana Sayfa</a></li>
-			<li><a href="about.html">Hakkımda</a></li>
-			<li><a href="interests.html">İlgi Alanlarım</a></li>
-			<li><a href="contact.html">İletişim</a></li>
-		</ul>
-	</nav>
+		<!-- 3) Kartlar Bölümü (30vh) -->
+		<section class="flex-cards">
+			<div class="card">C & System Programming</div>
+			<div class="card">Python Automation</div>
+			<div class="card">Bash Scripting</div>
+			<div class="card">Docker / Containers</div>
+			<div class="card">Kubernetes</div>
+			<div class="card">Embedded (STM32/ESP32)</div>
+		</section>
 
-	<main>
-		<p>Hoş geldiniz! Bu site, Web Programlama dersi kapsamında hazırlanmış kişisel bir tanıtım ve
-			mini portfolyo sayfasıdır. Linux ortamları ve otomasyon üzerine odaklanan bir bilgisayar
-			mühendisliği öğrencisi olarak projelerimi ve deneyimlerimi burada paylaşıyorum.</p>
+		<!-- 4) Flex Grow Uygulama (20vh) -->
+		<section class="flex-grow-area">
+			<div class="grow-box grow-1">Kutu 1 (flex-grow: 1)</div>
+			<div class="grow-box grow-2">Kutu 2 (flex-grow: 2)</div>
+			<div class="grow-box grow-3">Kutu 3 (flex-grow: 1)</div>
+		</section>
 
-		<h2 id="hakkimda">Hakkımda Kısaca</h2>
-		<p>Sistem mühendisliği ve gömülü yazılım geliştirme alanlarında deneyim sahibi bir bilgisayar
-			mühendisliği öğrencisiyim. Arch Linux ekosisteminde kullanıcı deneyimini geliştirmek için
-			projeler ve araçlar üzerinde çalışıyorum.</p>
-
-		<h2 id="teknik-yetkinlikler">Teknik Yetkinlikler</h2>
-		<p>C, Python, Bash gibi dillerde ve Docker, Kubernetes, Git gibi araçlarda pratik deneyime
-			sahibim. Ayrıca STM32, ESP32 gibi gömülü sistemler ve OSPF, BGP, MQTT gibi ağ
-			protokolleri konusunda bilgi birikimim bulunmaktadır.</p>
-
-		<h2>Hızlı Bağlantılar</h2>
-		<div class="quick-links">
-			<a href="#hakkimda">Hakkımda Kısaca</a>
-			<a href="#teknik-yetkinlikler">Teknik Yetkinlikler</a>
-			<a href="about.html">Detaylı Biyografi</a>
-			<a href="interests.html">İlgi Alanları</a>
-			<a href="contact.html">Bana Ulaşın</a>
-		</div>
-	</main>
-
-	<footer>
-		<p>&copy; 2026 Kerem Apaydın &mdash; Web Programlama Dersi</p>
-	</footer>
-
+		<!-- 5) Footer (10vh) -->
+		<footer class="flex-footer">
+			<p>&copy; 2026 Kerem Apaydın &mdash; Web Programlama Flexbox Ödevi</p>
+		</footer>
+	</div>
 </body>
 
 </html>
