@@ -1,4 +1,3 @@
-/* ===== Reset & Base ===== */
 * {
 	margin: 0;
 	padding: 0;
@@ -17,7 +16,6 @@ a {
 	color: inherit;
 }
 
-/* ===== Header ===== */
 header {
 	background: linear-gradient(135deg, #161b22 0%, #0d1117 100%);
 	color: #e6edf3;
@@ -41,7 +39,6 @@ header p {
 	color: #8b949e;
 }
 
-/* ===== Navigation ===== */
 nav {
 	background-color: #161b22;
 	text-align: center;
@@ -71,7 +68,6 @@ nav ul li a.active {
 	color: #58a6ff;
 }
 
-/* ===== Main Content ===== */
 main {
 	max-width: 900px;
 	margin: 2rem auto;
@@ -101,7 +97,6 @@ main p {
 	color: #c9d1d9;
 }
 
-/* ===== Quick Links ===== */
 .quick-links {
 	display: flex;
 	gap: 1rem;
@@ -126,7 +121,6 @@ main p {
 	background: #1c2333;
 }
 
-/* ===== Lists ===== */
 ul,
 ol {
 	margin-left: 1.5rem;
@@ -153,7 +147,6 @@ dd {
 	color: #8b949e;
 }
 
-/* ===== Blockquote ===== */
 blockquote {
 	border-left: 3px solid #58a6ff;
 	background-color: #0d1117;
@@ -164,7 +157,6 @@ blockquote {
 	border-radius: 0 6px 6px 0;
 }
 
-/* ===== Timeline ===== */
 .timeline {
 	position: relative;
 	padding-left: 2rem;
@@ -213,7 +205,6 @@ blockquote {
 	margin: 0;
 }
 
-/* ===== Contact List ===== */
 .contact-list {
 	list-style: none;
 	margin-left: 0;
@@ -240,16 +231,12 @@ blockquote {
 	color: #bc8cff;
 }
 
-/* ===== Typography Spacing ===== */
 h1,
 h2,
 p {
 	margin-bottom: 0.8rem;
 }
 
-/* ========================================================
-   LAB 3 - Contact Form (Box Model)
-   ======================================================== */
 
 .contact-container {
 	width: 600px;
@@ -258,8 +245,7 @@ p {
 	padding: 2.5rem;
 	border: 1px solid #30363d;
 	border-radius: 12px;
-	background: #11151c; /* Slightly distinct dark background for form */
-	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+	background: #11151c;	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
 }
 
 .contact-container h2 {
@@ -283,7 +269,6 @@ p {
 	padding: 0;
 }
 
-/* Çoklu seçici: text, email, password, select, textarea, file */
 .contact-container input[type="text"],
 .contact-container input[type="email"],
 .contact-container input[type="password"],
@@ -320,7 +305,6 @@ p {
 	resize: vertical;
 }
 
-/* Radio & Checkbox Groups */
 .radio-group,
 .checkbox-group {
 	background: #161b22;
@@ -353,7 +337,6 @@ p {
 	accent-color: #58a6ff;
 }
 
-/* Buttons */
 .button-group {
 	display: flex;
 	gap: 1rem;
@@ -373,19 +356,16 @@ p {
 }
 
 .btn-submit {
-	background: #007bff; /* Blue */
-}
+	background: #007bff;}
 
 .btn-reset {
-	background: #dc3545; /* Red */
-}
+	background: #dc3545;}
 
 .contact-container button:hover {
 	opacity: 0.9;
 	transform: translateY(-2px);
 }
 
-/* ===== Footer ===== */
 footer {
 	text-align: center;
 	padding: 1.5rem;
@@ -396,9 +376,6 @@ footer {
 	border-top: 1px solid #21262d;
 }
 
-/* ========================================================
-   LAB 4 - Flexbox Assignment
-   ======================================================== */
 
 .flex-wrapper {
 	height: 100vh;
@@ -408,7 +385,6 @@ footer {
 	color: #c9d1d9;
 }
 
-/* 1) Navbar (10vh) */
 .flex-navbar {
 	height: 10vh;
 	display: flex;
@@ -443,7 +419,6 @@ footer {
 	color: #58a6ff;
 }
 
-/* 2) Hero (30vh) */
 .flex-hero {
 	height: 30vh;
 	display: flex;
@@ -491,7 +466,6 @@ footer {
 	color: #8b949e;
 }
 
-/* 3) Kartlar (30vh) */
 .flex-cards {
 	height: 30vh;
 	display: flex;
@@ -515,7 +489,6 @@ footer {
 	color: #bc8cff;
 }
 
-/* 4) Flex Grow (20vh) */
 .flex-grow-area {
 	height: 20vh;
 	display: flex;
@@ -538,7 +511,6 @@ footer {
 .grow-2 { flex-grow: 2; background-color: #1f6feb; color: #fff; }
 .grow-3 { flex-grow: 1; background-color: #8957e5; color: #fff; }
 
-/* 5) Footer (10vh) */
 .flex-footer {
 	height: 10vh;
 	display: flex;
@@ -548,9 +520,6 @@ footer {
 	border-top: 1px solid #21262d;
 }
 
-/* ========================================================
-   LAB 5 - CSS Position Assignment
-   ======================================================== */
 
 .lab-position-wrapper {
 	text-align: center;
@@ -569,7 +538,6 @@ footer {
 	margin-bottom: 4rem;
 }
 
-/* 1. Relative Container */
 .announcement-card {
 	position: relative;
 	width: 90%;
@@ -581,19 +549,15 @@ footer {
 	padding: 3rem 2rem 2.5rem;
 	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 	transition: transform 0.3s ease, box-shadow 0.3s ease;
-	cursor: grab; /* Interactive cursor 1 */
-}
+	cursor: grab;}
 
-/* Hover Animation + Interaction 1 */
 .announcement-card:hover {
 	transform: translateY(-8px);
 	box-shadow: 0 15px 30px rgba(88, 166, 255, 0.15);
 }
 
 .announcement-card:active {
-	cursor: grabbing; /* Interactive cursor 2 */
-	transform: translateY(-4px); /* Interaction 2: active effect */
-}
+	cursor: grabbing;	transform: translateY(-4px);}
 
 .card-content h3 {
 	color: #e6edf3;
@@ -608,8 +572,6 @@ footer {
 	text-align: justify;
 }
 
-/* 2. Absolute Elements inside Relative Container */
-/* Absolute Element 1 */
 .badge-new {
 	position: absolute;
 	top: -15px;
@@ -621,12 +583,8 @@ footer {
 	font-weight: bold;
 	font-size: 0.95rem;
 	box-shadow: 0 4px 10px rgba(220, 53, 69, 0.5);
-	z-index: 10; /* Z-Index usage */
-	animation: pulseBadge 2s infinite; /* Keyframes animasyon */
-	cursor: help; /* Interactive cursor 3 */
-}
+	z-index: 10;	animation: pulseBadge 2s infinite;	cursor: help;}
 
-/* Absolute Element 2 */
 .badge-date {
 	position: absolute;
 	top: 20px;
@@ -641,7 +599,6 @@ footer {
 	z-index: 5;
 }
 
-/* Absolute Element 3 */
 .action-btn {
 	position: absolute;
 	bottom: -25px;
@@ -655,24 +612,20 @@ footer {
 	font-weight: bold;
 	font-size: 1.1rem;
 	box-shadow: 0 6px 15px rgba(35, 134, 54, 0.4);
-	cursor: pointer; /* Interactive cursor 4 */
-	transition: background-color 0.2s, transform 0.2s;
+	cursor: pointer;	transition: background-color 0.2s, transform 0.2s;
 	z-index: 10;
 }
 
 .action-btn:hover {
 	background-color: #2ea043;
-	transform: translateX(-50%) scale(1.05); /* Transition on hover */
-}
+	transform: translateX(-50%) scale(1.05);}
 
-/* Keyframes Animation */
 @keyframes pulseBadge {
 	0% { transform: scale(1) rotate(-5deg); box-shadow: 0 4px 10px rgba(220, 53, 69, 0.5); }
 	50% { transform: scale(1.1) rotate(5deg); box-shadow: 0 4px 20px rgba(220, 53, 69, 0.7); }
 	100% { transform: scale(1) rotate(-5deg); box-shadow: 0 4px 10px rgba(220, 53, 69, 0.5); }
 }
 
-/* 3. Fixed Helper Element */
 .fixed-helper {
 	position: fixed;
 	bottom: 30px;
