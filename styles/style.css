@@ -547,3 +547,147 @@ footer {
 	background-color: #161b22;
 	border-top: 1px solid #21262d;
 }
+
+/* ========================================================
+   LAB 5 - CSS Position Assignment
+   ======================================================== */
+
+.lab-position-wrapper {
+	text-align: center;
+	padding: 4rem 1rem 8rem;
+	min-height: 80vh; 
+}
+
+.lab-position-wrapper .section-title {
+	font-size: 2rem;
+	color: #58a6ff;
+	margin-bottom: 0.5rem;
+}
+
+.lab-position-wrapper .section-desc {
+	color: #8b949e;
+	margin-bottom: 4rem;
+}
+
+/* 1. Relative Container */
+.announcement-card {
+	position: relative;
+	width: 90%;
+	max-width: 550px;
+	margin: 0 auto;
+	background: linear-gradient(145deg, #161b22, #0d1117);
+	border: 1px solid #30363d;
+	border-radius: 12px;
+	padding: 3rem 2rem 2.5rem;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	cursor: grab; /* Interactive cursor 1 */
+}
+
+/* Hover Animation + Interaction 1 */
+.announcement-card:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 15px 30px rgba(88, 166, 255, 0.15);
+}
+
+.announcement-card:active {
+	cursor: grabbing; /* Interactive cursor 2 */
+	transform: translateY(-4px); /* Interaction 2: active effect */
+}
+
+.card-content h3 {
+	color: #e6edf3;
+	margin-bottom: 1rem;
+	font-size: 1.5rem;
+}
+
+.card-content p {
+	color: #c9d1d9;
+	line-height: 1.6;
+	margin-bottom: 1rem;
+	text-align: justify;
+}
+
+/* 2. Absolute Elements inside Relative Container */
+/* Absolute Element 1 */
+.badge-new {
+	position: absolute;
+	top: -15px;
+	left: -20px;
+	background-color: #dc3545;
+	color: #fff;
+	padding: 0.6rem 1.2rem;
+	border-radius: 20px;
+	font-weight: bold;
+	font-size: 0.95rem;
+	box-shadow: 0 4px 10px rgba(220, 53, 69, 0.5);
+	z-index: 10; /* Z-Index usage */
+	animation: pulseBadge 2s infinite; /* Keyframes animasyon */
+	cursor: help; /* Interactive cursor 3 */
+}
+
+/* Absolute Element 2 */
+.badge-date {
+	position: absolute;
+	top: 20px;
+	right: -15px;
+	background-color: #58a6ff;
+	color: #0d1117;
+	padding: 0.5rem 1rem;
+	border-radius: 6px;
+	font-weight: bold;
+	font-size: 0.9rem;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	z-index: 5;
+}
+
+/* Absolute Element 3 */
+.action-btn {
+	position: absolute;
+	bottom: -25px;
+	left: 50%;
+	transform: translateX(-50%);
+	background-color: #238636;
+	color: #fff;
+	border: none;
+	padding: 1rem 2.5rem;
+	border-radius: 30px;
+	font-weight: bold;
+	font-size: 1.1rem;
+	box-shadow: 0 6px 15px rgba(35, 134, 54, 0.4);
+	cursor: pointer; /* Interactive cursor 4 */
+	transition: background-color 0.2s, transform 0.2s;
+	z-index: 10;
+}
+
+.action-btn:hover {
+	background-color: #2ea043;
+	transform: translateX(-50%) scale(1.05); /* Transition on hover */
+}
+
+/* Keyframes Animation */
+@keyframes pulseBadge {
+	0% { transform: scale(1) rotate(-5deg); box-shadow: 0 4px 10px rgba(220, 53, 69, 0.5); }
+	50% { transform: scale(1.1) rotate(5deg); box-shadow: 0 4px 20px rgba(220, 53, 69, 0.7); }
+	100% { transform: scale(1) rotate(-5deg); box-shadow: 0 4px 10px rgba(220, 53, 69, 0.5); }
+}
+
+/* 3. Fixed Helper Element */
+.fixed-helper {
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	background-color: #bc8cff;
+	color: #0d1117;
+	padding: 1rem;
+	border-radius: 30px;
+	font-weight: bold;
+	box-shadow: 0 5px 15px rgba(188, 140, 255, 0.4);
+	z-index: 100;
+	transition: transform 0.3s;
+	cursor: pointer;
+}
+
+.fixed-helper:hover {
+	transform: translateY(-5px);
+}
