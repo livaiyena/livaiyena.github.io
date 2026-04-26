@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="tr" data-bs-theme="dark">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Kerem Apaydın - Bootstrap & JavaScript Etkinlik Kayıt Sayfası">
+	<title>Etkinlik Kayıt | Kerem Apaydın</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="styles/hafta7.css">
+</head>
+<body>
+
+	<nav class="navbar navbar-expand-lg bg-body-tertiary shadow-sm sticky-top">
+		<div class="container">
+			<a class="navbar-brand fw-bold" href="index.html">Kerem Apaydın</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="mainNav">
+				<ul class="navbar-nav ms-auto">
+					<li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
+					<li class="nav-item"><a class="nav-link" href="about.html">Hakkımda</a></li>
+					<li class="nav-item"><a class="nav-link" href="interests.html">İlgi Alanlarım</a></li>
+					<li class="nav-item"><a class="nav-link" href="contact.html">İletişim</a></li>
+					<li class="nav-item"><a class="nav-link" href="flexbox.html">CSS Flexbox</a></li>
+					<li class="nav-item"><a class="nav-link" href="lab-position.html">Duyuru Kartı</a></li>
+					<li class="nav-item"><a class="nav-link active" href="hafta7.html">Etkinlik Kayıt</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<section class="hero-section py-5 text-center">
+		<div class="container py-5">
+			<h1 class="display-4 fw-bold mb-3">Teknoloji Zirvesi 2026</h1>
+			<p class="lead text-body-secondary mb-4">Bilgisayar Mühendisliği topluluğu olarak düzenlediğimiz yıllık teknoloji zirvesine katılın. Workshop'lar, konuşmalar ve networking fırsatları sizi bekliyor!</p>
+			<a href="#kayitFormu" class="btn btn-primary btn-lg me-2">Hemen Kayıt Ol</a>
+			<button id="temaBtn" class="btn btn-outline-secondary btn-lg">Tema Değiştir</button>
+		</div>
+	</section>
+
+	<section class="py-5">
+		<div class="container">
+			<h2 class="text-center mb-4">Etkinlik Programı</h2>
+			<div class="row g-4">
+				<div class="col-md-4">
+					<div class="card h-100 shadow-sm rounded-4">
+						<div class="card-body text-center">
+							<div class="card-icon mb-3">🐧</div>
+							<h5 class="card-title">Linux Workshop</h5>
+							<p class="card-text text-body-secondary">Arch Linux kurulumundan masaüstü özelleştirmeye kadar adım adım rehberlik.</p>
+							<span class="badge bg-primary">10:00 - 12:00</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card h-100 shadow-sm rounded-4">
+						<div class="card-body text-center">
+							<div class="card-icon mb-3">🐳</div>
+							<h5 class="card-title">Docker & Kubernetes</h5>
+							<p class="card-text text-body-secondary">Konteyner teknolojileri ile mikro servis mimarisi uygulamaları.</p>
+							<span class="badge bg-success">13:00 - 15:00</span>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4">
+					<div class="card h-100 shadow-sm rounded-4">
+						<div class="card-body text-center">
+							<div class="card-icon mb-3">🤖</div>
+							<h5 class="card-title">Gömülü Sistemler</h5>
+							<p class="card-text text-body-secondary">STM32 ve ESP32 ile IoT projesi geliştirme atölyesi.</p>
+							<span class="badge bg-warning text-dark">15:30 - 17:30</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section id="kayitFormu" class="py-5 bg-body-secondary">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-7">
+					<h2 class="text-center mb-4">Etkinlik Başvuru Formu</h2>
+					<form id="basvuruFormu" class="card shadow rounded-4 p-4" novalidate>
+						<div class="mb-3">
+							<label for="adSoyad" class="form-label">Ad Soyad</label>
+							<input type="text" class="form-control" id="adSoyad" placeholder="Adınızı ve soyadınızı girin">
+						</div>
+						<div class="mb-3">
+							<label for="eposta" class="form-label">E-posta</label>
+							<input type="email" class="form-control" id="eposta" placeholder="ornek@mail.com">
+						</div>
+						<div class="mb-3">
+							<label for="bolum" class="form-label">Bölüm</label>
+							<select class="form-select" id="bolum">
+								<option value="" selected disabled>Bölümünüzü seçin</option>
+								<option value="Bilgisayar Mühendisliği">Bilgisayar Mühendisliği</option>
+								<option value="Yazılım Mühendisliği">Yazılım Mühendisliği</option>
+								<option value="Elektrik-Elektronik Mühendisliği">Elektrik-Elektronik Mühendisliği</option>
+								<option value="Diğer">Diğer</option>
+							</select>
+						</div>
+						<div class="mb-3">
+							<label for="workshop" class="form-label">Katılmak İstediğiniz Workshop</label>
+							<select class="form-select" id="workshop">
+								<option value="" selected disabled>Workshop seçin</option>
+								<option value="Linux Workshop">Linux Workshop</option>
+								<option value="Docker & Kubernetes">Docker & Kubernetes</option>
+								<option value="Gömülü Sistemler">Gömülü Sistemler</option>
+							</select>
+						</div>
+						<div class="mb-3">
+							<label for="mesaj" class="form-label">Ek Not (Opsiyonel)</label>
+							<textarea class="form-control" id="mesaj" rows="3" placeholder="Varsa eklemek istediğiniz bir not..."></textarea>
+						</div>
+						<div class="mb-3 form-check">
+							<input type="checkbox" class="form-check-input" id="kvkk">
+							<label class="form-check-label" for="kvkk">KVKK metnini okudum, kabul ediyorum.</label>
+						</div>
+						<button type="submit" class="btn btn-primary w-100 btn-lg">Başvuruyu Gönder</button>
+					</form>
+
+					<div id="uyariAlani" class="mt-3"></div>
+					<div id="sonucAlani" class="mt-4"></div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer class="text-center py-4 bg-body-tertiary border-top">
+		<p class="mb-0 text-body-secondary">&copy; 2026 Kerem Apaydın &mdash; Web Programlama Hafta 7 Ödevi</p>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="scripts/hafta7.js"></script>
+</body>
+</html>
